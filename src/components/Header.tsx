@@ -4,11 +4,16 @@ import { Container } from '@/components/Container'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import Image from 'next/image'
+
+import logo from '@/images/logos/Petrichor-logo-condensed-transparent.png'
+
 const navigation = [
-  { name: 'Product', href: '/' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Upcoming Shows', href: '/' },
+  { name: 'Little Weaver', href: '#' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export function Header() {
@@ -17,10 +22,12 @@ export function Header() {
   return (
     <header className="relative z-50 flex-none lg:pt-11">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <a href="#" className="-m-1.5 p-1.5">
-          <span className="sr-only">Your Company</span>
-          <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+
+        <a href="/" className="-m-1.5 p-1.5">
+          <span className="sr-only">Petrichor Productions</span>
+          <Image className="h-16 w-auto" src={logo} width={529} height={529} alt="Petrichor Productions Logo" />
         </a>
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -37,9 +44,6 @@ export function Header() {
               {item.name}
             </a>
           ))}
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -47,20 +51,14 @@ export function Header() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <span className="sr-only">Petrichor Productions</span>
+              <Image className="h-16 w-auto" src={logo} width={529} height={529} alt="Petrichor Productions Logo" />
             </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -75,14 +73,6 @@ export function Header() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>
