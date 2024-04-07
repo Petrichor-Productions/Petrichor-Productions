@@ -2,139 +2,58 @@
 
 import { useEffect, useId, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
-import cathleneBurrageImage from '@/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from '@/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
+import playbillImage from '@/images/godcatcher/playbill.jpg'
+import theatreScotlandImage from '@/images/godcatcher/theatre-scotland.png'
+import theScotsmanImage from '@/images/godcatcher/the-scotsman.png'
 
 const days = [
   {
-    name: 'Opening Day',
-    date: 'April 4',
-    dateTime: '2022-04-04',
-    speakers: [
+    name: 'Little Weaver (God Catcher)',
+    date: 'August 2023',
+    place: 'Edinburgh, UK',
+    dateTime: '2023-08',
+    shows: [
       {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
+        name: 'Playbill Feature',
+        subtitle: "This New Edinburgh Festival Fringe Musical Bills Itself as 'Wicked Meets Hadestown' — Leah Putnam",
+        image: playbillImage,
+        link: 'https://playbill.com/article/this-new-edinburgh-fringe-musical-bills-itself-as-wicked-meets-hadestown',
       },
       {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
+        stars: 5,
+        name: 'Theatre Scotland',
+        subtitle: '‘God Catcher’ is one of the best productions not only have I seen at the Fringe, but one of the best productions I have seen in 2023. — Lewis C. Baird',
+        image: theatreScotlandImage,
+        link: 'https://theatrescotland.co.uk/2023/08/25/god-catcher-ermintrude-underbelly-bristo-square-review-by-lewis-c-baird/',
       },
       {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
+        stars: 4,
+        name: 'The Scotsman',
+        subtitle: 'This Arachne for the #MeToo generation challenges how stories are told and by whom, and this is as threatening to those in power today as it was in ancient Greece — Susan Mansfield',
+        image: theScotsmanImage,
+        link: 'https://www.scotsman.com/arts-and-culture/edinburgh-festivals/edinburgh-festival-fringe-musicals-and-opera-reviews-well-have-nun-of-it-gone-to-the-dogs-god-catcher-4249418',
       },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
-      },
+
+      
     ],
   },
   {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
+    name: 'How Not To Kill a Plant',
+    date: 'July 2024',
+    place: 'Edmonton, Canada',
     dateTime: '2022-04-05',
-    speakers: [
+    shows: [
       {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        image: damarisKimuraImage,
-      },
-      {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        image: ibrahimFraschImage,
-      },
-      {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
-        image: cathleneBurrageImage,
-      },
-      {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        image: rinaldoBeynonImage,
-      },
-      {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        image: waylonHydenImage,
-      },
-      {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        image: giordanoSagucioImage,
-      },
-    ],
-  },
-  {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    speakers: [
-      {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
-      },
-      {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
-      },
-      {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
+        name: 'TODO',
+        subtitle: 'TODO',
+        image: theatreScotlandImage,
+        link: 'https://playbill.com/article/this-new-edinburgh-fringe-musical-bills-itself-as-wicked-meets-hadestown',
       },
     ],
   },
@@ -145,23 +64,11 @@ function ImageClipPaths({
   ...props
 }: React.ComponentPropsWithoutRef<'svg'> & { id: string }) {
   return (
-    <svg aria-hidden="true" width={0} height={0} {...props}>
-      <defs>
-        <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
-          <path d="M0,0 h0.729 v0.129 h0.121 l-0.016,0.032 C0.815,0.198,0.843,0.243,0.885,0.243 H1 v0.757 H0.271 v-0.086 l-0.121,0.057 v-0.214 c0,-0.032,-0.026,-0.057,-0.057,-0.057 H0 V0" />
-        </clipPath>
-        <clipPath id={`${id}-1`} clipPathUnits="objectBoundingBox">
-          <path d="M1,1 H0.271 v-0.129 H0.15 l0.016,-0.032 C0.185,0.802,0.157,0.757,0.115,0.757 H0 V0 h0.729 v0.086 l0.121,-0.057 v0.214 c0,0.032,0.026,0.057,0.057,0.057 h0.093 v0.7" />
-        </clipPath>
-        <clipPath id={`${id}-2`} clipPathUnits="objectBoundingBox">
-          <path d="M1,0 H0.271 v0.129 H0.15 l0.016,0.032 C0.185,0.198,0.157,0.243,0.115,0.243 H0 v0.757 h0.729 v-0.086 l0.121,0.057 v-0.214 c0,-0.032,0.026,-0.057,0.057,-0.057 h0.093 V0" />
-        </clipPath>
-      </defs>
-    </svg>
+    <svg aria-hidden="true" width={0} height={0} {...props}></svg>
   )
 }
 
-export function Speakers() {
+export function Shows() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
@@ -182,22 +89,21 @@ export function Speakers() {
 
   return (
     <section
-      id="speakers"
-      aria-labelledby="speakers-title"
+      id="shows"
+      aria-labelledby="shows-title"
       className="py-20 sm:py-32"
     >
       <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
-            id="speakers-title"
+            id="shows-title"
             className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
           >
-            Speakers
+            Shows
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+            Upcoming and Previous Shows
           </p>
         </div>
         <Tab.Group
@@ -231,7 +137,7 @@ export function Speakers() {
                         >
                           <Tab className="ui-not-focus-visible:outline-none">
                             <span className="absolute inset-0" />
-                            {day.name}
+                            <i>{day.name}</i>
                           </Tab>
                         </div>
                         <time
@@ -240,6 +146,11 @@ export function Speakers() {
                         >
                           {day.date}
                         </time>
+                        <span
+                          className="mt-1 block text-1xl font-semibold tracking-tight text-blue-900"
+                        >
+                        {day.place}
+                        </span>
                       </div>
                     </div>
                   ))}
@@ -254,8 +165,8 @@ export function Speakers() {
                 className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
                 unmount={false}
               >
-                {day.speakers.map((speaker, speakerIndex) => (
-                  <div key={speakerIndex}>
+                {day.shows.map((show, showIndex) => (
+                  <div key={showIndex}>
                     <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
@@ -264,27 +175,33 @@ export function Speakers() {
                             'border-blue-300',
                             'border-indigo-300',
                             'border-sky-300',
-                          ][speakerIndex % 3],
+                          ][showIndex % 3],
                         )}
                       />
                       <div
                         className="absolute inset-0 bg-indigo-50"
-                        style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
+                        style={{ clipPath: `url(#${id}-${showIndex % 3})` }}
                       >
+                        <Link href={show.link}>
                         <Image
                           className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                          src={speaker.image}
+                          src={show.image}
                           alt=""
                           priority
                           sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                         />
+                        </Link>
                       </div>
                     </div>
                     <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
-                      {speaker.name}
+                      {show.name}
+                      {show.stars != null && 
+                      <br/>
+                      }
+                      {show.stars != null && '★'.repeat(show.stars)}
                     </h3>
                     <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.role}
+                      <i>{show.subtitle}</i>
                     </p>
                   </div>
                 ))}

@@ -10,8 +10,7 @@ import logo from '@/images/logos/Petrichor-logo-condensed-transparent.png'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Upcoming Shows', href: '/' },
-  { name: 'Little Weaver', href: '#' },
+  { name: 'Little Weaver', href: 'https://godcatcher.com' },
   { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]

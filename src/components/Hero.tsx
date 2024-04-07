@@ -26,8 +26,7 @@ export function Hero() {
               </i>
             </p>
             <p>
-              Petrichor Productions is a musical theatre production compnay run by Cassie Muise, based in Montreal, Canada.
-              todo fill this in
+                Petrichor Productions is production company focused on new works, especially musical theatre.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">
@@ -35,10 +34,8 @@ export function Hero() {
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '18'],
-              ['People Attending', '2,091'],
-              ['Venue', 'Staples Center'],
-              ['Location', 'Los Angeles'],
+              ['Montreal, Canada', 'Cassie Muise'],
+              ['London, UK', 'Tyler McKinnon'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blue-600">{name}</dt>
