@@ -2,11 +2,12 @@ import { useId } from 'react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
 
+import clsx from 'clsx'
+
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 import { BackgroundImage } from '@/components/BackgroundImage'
@@ -94,27 +95,56 @@ function ContactForm() {
   )
 }
 
+function Office({
+  name,
+  children,
+  invert = false,
+}: {
+  name: string
+  children: React.ReactNode
+  invert?: boolean
+}) {
+  return (
+    <address
+      className={clsx(
+        'text-sm not-italic',
+        invert ? 'text-neutral-300' : 'text-neutral-600',
+      )}
+    >
+      <strong className={invert ? 'text-white' : 'text-neutral-950'}>
+        {name}
+      </strong>
+      <br />
+      {children}
+    </address>
+  )
+}
+
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
-      </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
-        </h2>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+        <div className="relative mt-10 max-w-2xl space-y-6 text-base">
+        <p className='mt-10'>
+          Please send us an email if you would like to get in touch! Please keep in mind that we occupy both UK and North American Eastern Time Zones (EST) and will respond accordingly!
+        </p>
+        </div>
+        <dl className="mt-6 grid grid-cols-1 gap-1 text-sm sm:grid-cols-3">
+            <div key="mailing">
+              <dd>
+                <Office name="Mailing Address">
+                  4650 Rue Hutchison
+                  <br />
+                  H2V 3Z9
+                  <br />
+                  Montréal, QC
+                  <br />
+                  Canada
+                </Office>
+              </dd>
+            </div>
           {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
+            ['Press', 'press@petrichor-productions.ca'],
+            ['Bookings', 'booking@petrichor-productions.ca'],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -128,15 +158,16 @@ function ContactDetails() {
               </dd>
             </div>
           ))}
-        </dl>
-      </Border>
+          </dl>
 
-      <Border className="mt-16 pt-16">
+        {/*/
+        <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Follow us
         </h2>
         <SocialMedia className="mt-6" />
-      </Border>
+       </Border>
+        */}
     </FadeIn>
   )
 }
@@ -149,8 +180,8 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-        <BackgroundImage position='right' className="-bottom-32 -top-40" />
-      <PageIntro eyebrow="Contact" title="Let’s work together">
+        <BackgroundImage position='right' className="bottom-40 -top-40" />
+      <PageIntro eyebrow="Contact" title="Reach Out!">
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 

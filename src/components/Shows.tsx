@@ -8,11 +8,30 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
+
+// little weaver
 import playbillImage from '@/images/godcatcher/playbill.jpg'
 import theatreScotlandImage from '@/images/godcatcher/theatre-scotland.png'
 import theScotsmanImage from '@/images/godcatcher/the-scotsman.png'
 
+// hntkap
+import edmontonPlaceholder from '@/images/hntkap/edmonton-fringe.png'
+
 const days = [
+  {
+    name: 'How Not To Kill a Plant',
+    date: 'July 2024',
+    place: 'Edmonton, Canada',
+    dateTime: '2022-04-05',
+    shows: [
+      {
+        name: 'Edmonton Fringe Website',
+        subtitle: 'To Be Determined! Come back soon!',
+        image: edmontonPlaceholder,
+        link: 'https://www.fringetheatre.ca/',
+      },
+    ],
+  },
   {
     name: 'Little Weaver (God Catcher)',
     date: 'August 2023',
@@ -38,22 +57,6 @@ const days = [
         subtitle: 'This Arachne for the #MeToo generation challenges how stories are told and by whom, and this is as threatening to those in power today as it was in ancient Greece — Susan Mansfield',
         image: theScotsmanImage,
         link: 'https://www.scotsman.com/arts-and-culture/edinburgh-festivals/edinburgh-festival-fringe-musicals-and-opera-reviews-well-have-nun-of-it-gone-to-the-dogs-god-catcher-4249418',
-      },
-
-      
-    ],
-  },
-  {
-    name: 'How Not To Kill a Plant',
-    date: 'July 2024',
-    place: 'Edmonton, Canada',
-    dateTime: '2022-04-05',
-    shows: [
-      {
-        name: 'TODO',
-        subtitle: 'TODO',
-        image: theatreScotlandImage,
-        link: 'https://playbill.com/article/this-new-edinburgh-fringe-musical-bills-itself-as-wicked-meets-hadestown',
       },
     ],
   },
@@ -165,7 +168,7 @@ export function Shows() {
                 className="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
                 unmount={false}
               >
-                {day.shows.map((show, showIndex) => (
+                {day.shows.reverse().map((show, showIndex) => (
                   <div key={showIndex}>
                     <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                       <div

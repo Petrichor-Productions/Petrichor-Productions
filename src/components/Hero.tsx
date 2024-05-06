@@ -26,7 +26,7 @@ export function Hero() {
               </i>
             </p>
             <p>
-                Petrichor Productions is production company focused on new works, especially musical theatre.
+                Petrichor Productions is production company focused on new works, especially musical theatre. They currently work in Canada and the UK.
             </p>
           </div>
           <Button href="#" className="mt-10 w-full sm:hidden">

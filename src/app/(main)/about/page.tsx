@@ -2,7 +2,6 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Border } from '@/components/Border'
-import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
@@ -23,17 +22,18 @@ const people = [
     name: 'Cassie Muise',
     role: 'Writer, Co-Producer',
     image: { src: imageCassieMuise },
-    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    xUrl: '#',
-    linkedinUrl: '#',
+    bio: 'Cassie Muise is an alumni of both Randolph College for the Performing Arts (Toronto) and the Royal Conservatoire of Scotland (Glasgow). She has been an actor and singer for 20 years, and for the past 5 years has been writing, dramaturging, and producing work under Petrichor.',
+    linkedinUrl: 'https://ca.linkedin.com/in/cassie-muise-she-her-479462a',
+    instaUrl: 'https://www.instagram.com/cassiemuise/',
   },
   {
     name: 'Tyler McKinnon',
     role: 'Composer, Co-Producer',
     image: { src: imageTylerMcKinnon},
-    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    xUrl: '#',
-    linkedinUrl: '#',
+    bio: 'Tyler McKinnon is an alumni of the Royal Conservatoire of Scotland (Glasgow), and has been an actor, singer and composer for 20 years.',
+    xUrl: 'https://twitter.com/tyler_mckinnon1',
+    instaUrl: 'https://www.instagram.com/tylermckinnon1/G',
+    spotifyUrl: 'https://open.spotify.com/artist/0jODXf7ls0v8o4ue766ZQZ',
   },
 ]
 
@@ -45,8 +45,7 @@ function Team() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-            best results for our clients.
+            The Creative and Production Team behind Petrichor Productions. Singers, Dancers, Actors, Writers, Composers, Producers.
           </p>
         </div>
         <ul
@@ -57,7 +56,7 @@ function Team() {
             <li key={person.name}>
               <Image 
               alt="" 
-              className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+              className="h-96 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
               priority
               {...person.image}
               />
@@ -65,15 +64,36 @@ function Team() {
               <p className="text-base leading-7 text-gray-600">{person.role}</p>
               <p className="mt-4 text-base leading-7 text-gray-600">{person.bio}</p>
               <ul role="list" className="mt-6 flex gap-x-6">
-                <li>
+
+                {person.instaUrl && <li>
+                  <a href={person.instaUrl} className="text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Instagram</span>
+                    <svg className="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                  </a>
+                </li>}
+
+
+                {person.xUrl && <li>
                   <a href={person.xUrl} className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">X</span>
                     <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
                     </svg>
                   </a>
-                </li>
-                <li>
+                </li>}
+
+                { person.spotifyUrl && <li>
+                  <a href={person.spotifyUrl} className="text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Spotify</span>
+                    <svg className="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                    </svg>
+                  </a>
+                </li>} 
+
+                {person.linkedinUrl && <li>
                   <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">LinkedIn</span>
                     <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -84,7 +104,8 @@ function Team() {
                       />
                     </svg>
                   </a>
-                </li>
+                </li>}
+
               </ul>
             </li>
           ))}
@@ -162,32 +183,39 @@ export default async function About() {
   return (
     <>
       <BackgroundImage position='right' className="-bottom-32 -top-40" />
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="Creating Original Works of Musical Theatre">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          We believe that musical theatre, as a medium, can carry impactful 
+          stories that move and provoke us unlike any other medium. 
+          As long-time students and performers of musical theatre, 
+          we set out to create new original works ourselves.
         </p>
         <div className="relative mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            After meeting in their Master&apos;s program at the Royal Conservatoire of Scotland,
+            Cassie and Tyler have been long-time friends and collaborators. Having 
+            performed together many times in the past, during the pandemic Cassie and Tyler
+            starting work on the book and music for <i>Little Weaver</i> (previously <i>God Catcher</i>),
+            and along with <a href="https://www.pricklypearp.com/">Prickly Pear Productions</a> and 
+            significant grants from the Canada Council for the Arts and Arts Council Malta, they
+            co-produced a 10 actor, four week run of the show at the Edinburgh Fringe Festival in 2023. 
+            Further development of the show is slated for 2025.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Their current project is <i>How Not to Kill a Plant</i>, which is planned to debut
+            at the Edmonton Fringe Festival in 2024.
           </p>
         </div>
       </PageIntro>
+
       <Container className="mt-16">
+     {/*/
         <StatList>
           <StatListItem value="35" label="Underpaid employees" />
           <StatListItem value="52" label="Placated clients" />
           <StatListItem value="$25M" label="Invoices billed" />
         </StatList>
+      */}
         <Team />
       </Container>
 
