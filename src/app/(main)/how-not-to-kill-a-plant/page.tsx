@@ -20,6 +20,7 @@ import Calendar from 'react-calendar'
 
 const lutherCentre = "10012 81 Ave NW, Edmonton, AB";
 const lutherCentreGeo = "geo:53.51727,-113.489216";
+const lutherCentreMaps = "https://maps.app.goo.gl/nfDWYDvEUxGq14M38";
 
 const showtimes = [
   {
@@ -27,6 +28,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '13:45',
     duration: {hours: 1}
@@ -36,6 +38,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '23:30',
     duration: {hours: 1}
@@ -45,6 +48,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '13:45',
     duration: {hours: 1}
@@ -54,6 +58,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '17:45',
     duration: {hours: 1}
@@ -63,6 +68,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '21:45',
     duration: {hours: 1}
@@ -72,6 +78,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '13:45',
     duration: {hours: 1}
@@ -81,6 +88,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '16:00',
     duration: {hours: 1}
@@ -90,6 +98,7 @@ const showtimes = [
     name: 'The Luther Centre',
     address: lutherCentre,
     geo: lutherCentreGeo,
+    maps: lutherCentreMaps,
     imageUrl: pic.src,
     start: '21:45',
     duration: {hours: 1}

@@ -107,7 +107,7 @@ export function Cal(props: any) {
           {props.showtimes.filter((showtime: any) => showtime.date == format(date, 'yyyy-MM-dd')).map((showtime: any) => (
             <li
               key={starttime(showtime.date, showtime.start).string}
-              className="group flex items-center space-x-4 rounded-xl px-4 py-2 focus-within:bg-gray-100 hover:bg-gray-100"
+              className="group flex items-center space-x-4 rounded-xl px-4 py-2 focus-within:bg-gray-50 hover:bg-indigo-50 bg-white"
             >
               <img src={showtime.imageUrl} alt="" className="h-10 w-10 flex-none rounded-full" />
               <div className="flex-auto">
@@ -118,6 +118,37 @@ export function Cal(props: any) {
                   <time dateTime={endtime(showtime.date, showtime.start, showtime.duration).string}>{format(endtime(showtime.date, showtime.start, showtime.duration).date, "p")}</time>
                 </p>
               </div>
+
+              {
+                (platform == "apple") &&
+                <Menu as="div" className="relative">
+                <div>
+                  <Menu.Button className="-m-2 flex items-center rounded-full p-1.5 text-gray-500 hover:text-gray-600">
+                    <span className="sr-only">Open options</span>
+                    <EllipsisVerticalIcon className="h-6 w-6" aria-hidden="true" />
+                  </Menu.Button>
+                </div>
+
+                <Menu.Items
+                  className="absolute right-0 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                >
+                  <div className="py-1">
+                    <Menu.Item>
+                        <a
+                          href={showtime.maps}
+                          className={classNames(
+                            "ui-active:bg-gray-100 ui-not-active:bg-white text-black",
+                            'block px-4 py-2 text-sm',
+                          )}
+                        >
+                          Open in Google Maps
+                        </a>
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Menu>
+              }
+
             </li>
           ))}
         </ol>
