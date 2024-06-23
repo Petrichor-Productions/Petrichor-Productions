@@ -12,12 +12,12 @@ import { EllipsisVerticalIcon } from '@heroicons/react/24/outline'
 
 import { isMacOs, isIOS } from 'react-device-detect';
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
 
-function geoURI(uri): string | undefined {
+function geoURI(uri: string): string | undefined {
   const u = uri.replace("geo:", "");
   // const scheme = Platform.select({ ios: 'maps:0,0?q=', android: 'geo:0,0?q=' });
   if (isMacOs || isIOS) {
@@ -27,27 +27,27 @@ function geoURI(uri): string | undefined {
   return `geo:0,0?q=${u}`
 }
 
-function starttime(date, time) {
+function starttime(date: string, time: string) {
   return {
     string: date + "T" + time,
     date: parseISO(date + "T" + time)
   };
 }
 
-function endtime(date, time, duration) {
+function endtime(date: string, time: string, duration: any) {
   return {
     string: formatISO(add(parseISO(date + "T" + time), duration)),
     date: add(parseISO(date + "T" + time), duration)
   }
 }
 
-export function Cal(props) {
+export function Cal(props: any) {
 
-  const mindate = parse(props.showtimes.reduce(function(prev, curr) {
+  const mindate = parse(props.showtimes.reduce(function(prev: any, curr: any) {
     return prev.date < curr.date ? prev : curr;
   }).date, "yyyy-MM-dd", new Date());
 
-  const maxdate = parse(props.showtimes.reduce(function(prev, curr) {
+  const maxdate = parse(props.showtimes.reduce(function(prev: any, curr: any) {
     return prev.date > curr.date ? prev : curr;
   }).date, "yyyy-MM-dd", new Date());
 
@@ -56,19 +56,19 @@ export function Cal(props) {
     defaultDate = mindate;
   } 
 
-    const [date, setDate] = useState<Value>(defaultDate);
+    const [date, setDate] = useState(defaultDate);
   
-    function handleClick(value, event) {
+    function handleClick(value: any, event: any) {
       setDate(value);
     }
 
-    function tileDisabled({ date, view }) {
+    function tileDisabled({ date, view }: any) {
       // Disable tiles in month view only
       if (view === 'month') {
         // Check if a date React-Calendar wants to check is on the list of disabled dates
         // return isPast(date);
 
-        return props.showtimes.filter( (showtime) => showtime.date == format(date, 'yyyy-MM-dd') ).length == 0 ;
+        return props.showtimes.filter( (showtime: any) => showtime.date == format(date, 'yyyy-MM-dd') ).length == 0 ;
       }
   
       return true;
@@ -99,7 +99,7 @@ export function Cal(props) {
           Schedule for <time dateTime={format(date, "yyyy-MM-dd")}>{format(date, "PPP")}</time>
         </h2>
         <ol className="mt-4 space-y-1 text-sm leading-6 text-gray-500">
-          {props.showtimes.filter((showtime) => showtime.date == format(date, 'yyyy-MM-dd')).map((showtime) => (
+          {props.showtimes.filter((showtime: any) => showtime.date == format(date, 'yyyy-MM-dd')).map((showtime: any) => (
             <li
               key={starttime(showtime.date, showtime.start).string}
               className="group flex items-center space-x-4 rounded-xl px-4 py-2 focus-within:bg-gray-100 hover:bg-gray-100"
