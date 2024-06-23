@@ -15,24 +15,24 @@ import theatreScotlandImage from '@/images/godcatcher/theatre-scotland.png'
 import theScotsmanImage from '@/images/godcatcher/the-scotsman.png'
 
 // hntkap
-import edmontonPlaceholder from '@/images/hntkap/edmonton-fringe.png'
+import edmontonPlaceholder from '@/images/hntkap/festival guide thumb-5 (1).jpg'
 
 const days = [
   {
     name: 'How Not To Kill a Plant',
-    date: 'July 2024',
+    date: 'August 2024',
     place: 'Edmonton, Canada',
     dateTime: '2022-04-05',
     shows: [
       {
         name: 'Edmonton Fringe Website',
-        subtitle: 'To Be Determined! Come back soon!',
+        subtitle: 'August 15-25 2024',
         image: edmontonPlaceholder,
-        link: 'https://www.fringetheatre.ca/',
+        link: '/how-not-to-kill-a-plant',
       },
     ],
   },
-  {
+  { 
     name: 'Little Weaver (God Catcher)',
     date: 'August 2023',
     place: 'Edinburgh, UK',
