@@ -19,7 +19,7 @@ import { Cal } from '@/components/Calendar'
 import Calendar from 'react-calendar'
 
 const lutherCentre = "10012 81 Ave NW, Edmonton, AB";
-const lutherCentreGeo = "geo:37.786971,-122.399677";
+const lutherCentreGeo = "geo:53.51727,-113.489216";
 
 const showtimes = [
   {
