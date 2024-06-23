@@ -2,7 +2,7 @@
 
 import { Calendar } from 'react-calendar'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { isAfter, isBefore, isPast, format, isEqual, parse, parseISO, min, add, formatISO } from "date-fns";
 
@@ -14,17 +14,6 @@ import { isMacOs, isIOS } from 'react-device-detect';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
-}
-
-
-function geoURI(uri: string): string | undefined {
-  const u = uri.replace("geo:", "");
-  // const scheme = Platform.select({ ios: 'maps:0,0?q=', android: 'geo:0,0?q=' });
-  if (isMacOs || isIOS) {
-    return `maps:0,0?q=${u}`
-  }
-    
-  return `geo:0,0?q=${u}`
 }
 
 function starttime(date: string, time: string) {
@@ -42,6 +31,22 @@ function endtime(date: string, time: string, duration: any) {
 }
 
 export function Cal(props: any) {
+
+  const [platform, setPlatform] = useState("not-apple");
+  useEffect(() => {
+    setPlatform(() => {if (isMacOs || isIOS) { return "apple" } else { return "not-apple"}})
+  }, [setPlatform])
+
+
+  function geoURI(uri: string): string | undefined {
+    const u = uri.replace("geo:", "");
+    // const scheme = Platform.select({ ios: 'maps:0,0?q=', android: 'geo:0,0?q=' });
+    if (platform == "apple") {
+      return `maps:0,0?q=${u}`
+    }
+      
+    return `geo:0,0?q=${u}`
+  }
 
   const mindate = parse(props.showtimes.reduce(function(prev: any, curr: any) {
     return prev.date < curr.date ? prev : curr;
