@@ -185,25 +185,23 @@ export default async function About() {
       <BackgroundImage position='right' className="-bottom-32 -top-40" />
       <PageIntro eyebrow="About us" title="Creating Original Works of Musical Theatre">
         <p>
-          We believe that musical theatre, as a medium, can carry impactful 
+          We believe that musical theatre can carry impactful 
           stories that move and provoke us unlike any other medium. 
           As long-time students and performers of musical theatre, 
           we set out to create new original works ourselves.
         </p>
         <div className="relative mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            After meeting in their Master&apos;s program at the Royal Conservatoire of Scotland,
-            Cassie and Tyler have been long-time friends and collaborators. Having 
-            performed together many times in the past, during the pandemic Cassie and Tyler
-            starting work on the book and music for <i>Little Weaver</i> (previously <i>God Catcher</i>),
-            and along with <a href="https://www.pricklypearp.com/">Prickly Pear Productions</a> and 
-            significant grants from the Canada Council for the Arts and Arts Council Malta, they
-            co-produced a 10 actor, four week run of the show at the Edinburgh Fringe Festival in 2023. 
-            Further development of the show is slated for 2025.
+            Since meeting in their Master&apos;s program at the Royal Conservatoire of Scotland,
+            Cassie and Tyler have been long-time friends and collaborators. During the pandemic Cassie and Tyler
+            starting work on their first original musical, <i>Little Weaver</i> (previously <i>God Catcher</i>). Along with <a href="https://www.pricklypearp.com/">Prickly Pear Productions</a> and 
+            significant support from the Canada Council for the Arts and Arts Council Malta, they
+            co-produced a 9 actor, four week run of the show at the Edinburgh Festival Fringe in 2023. 
+            Further development of the show is slated for 2025. Petrichor Productions is passionate about new work, and seeks to find the right words for experiences we know by heart. 
           </p>
           <p>
-            Their current project is <i>How Not to Kill a Plant</i>, which is planned to debut
-            at the Edmonton Fringe Festival in 2024.
+            Their current project is <i>How Not to Kill a Plant</i>, which will debut
+            at the Edmonton Fringe Festival from Augusst 15-25, 2024 with the <a href="https://www.grindstonetheatre.ca/">Grindstone Theatre Society</a>.
           </p>
         </div>
       </PageIntro>
