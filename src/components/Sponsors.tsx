@@ -3,10 +3,12 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import MaltaArtsCouncil from '@/images/godcatcher/malta-ac.png'
 import CanadaCouncilForTheArts from '@/images/godcatcher/cca.png'
+import HelpMusiciansLogo from '@/images/hntkap/Help Musicians Logo (SB) CMYK Black.png'
 
 const sponsors = [
   { name: 'Canada Council for the Arts', logo: CanadaCouncilForTheArts, x: 450, y: 250 },
   { name: 'Arts Council Malta', logo: MaltaArtsCouncil, x: 150, y: 150 },
+  { name: 'Help Musicians', logo: HelpMusiciansLogo , x: 150, y: 150 }
 ]
 
 export function Sponsors() {
