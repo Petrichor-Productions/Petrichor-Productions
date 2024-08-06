@@ -165,7 +165,7 @@ const people = [
     pronouns: "she/her",
     role: 'Denise, Writer, Director, Producer',
     image: { src: imageCassieMuise },
-    bio: "Cassie Muise is originally from Nova Scotia and has an array of experience including film, theatre, teaching, directing and writing. Cassie and Tyler have co-written How Not To Kill A Plant and Little Weaver (previously God Catcher), which made its world premiere at the Edinburgh Fringe Festival in 2023. Select credits include: Wednesday in The Addams Family, Tina Denmark in Ruthless, Nickie in Sweet Charity and the short film T Minus. She is currently based in Montréal with her partner Blair and their dogs, Fiyero and Kelso. Her favourite plant is the rubus idaeus, otherwise known as the red raspberry. While the deliciously tart fruit is well known, raspberry leaf makes delicious tea to help with inflammation, digestion, and more. Cassie especially loves the rubus idaeus for the memories of picking them with her grandfather, Vincie.",
+    bio: <>Cassie Muise is originally from Nova Scotia and has an array of experience including film, theatre, teaching, directing and writing. Cassie and Tyler have co-written How Not To Kill A Plant and Little Weaver (previously God Catcher), which made its world premiere at the Edinburgh Fringe Festival in 2023. Select credits include: Wednesday in The Addams Family, Tina Denmark in Ruthless, Nickie in Sweet Charity and the short film T Minus. She is currently based in Montréal with her partner Blair and their dogs, Fiyero and Kelso. Her favourite plant is the rubus idaeus, otherwise known as the red raspberry. While the deliciously tart fruit is well known, raspberry leaf makes delicious tea to help with inflammation, digestion, and more. Cassie especially loves the rubus idaeus for the memories of picking them with her grandfather, Vincie.</>,
     linkedinUrl: 'https://ca.linkedin.com/in/cassie-muise-she-her-479462a',
     instaUrl: 'https://www.instagram.com/cassiemuise/',
   },
@@ -174,7 +174,7 @@ const people = [
     pronouns: "he/him",
     role: 'Tom, Composer, Producer',
     image: { src: imageTylerMcKinnon},
-    bio: "Tyler McKinnon is an actor/composer from Leduc, Alberta, now based in London, UK. Tyler is one half the writing team for ‘How Not To Kill A Plant’ and he is thrilled to be performing in and debuting the show this year at the Edmonton International Fringe Festival. Previous credits include: Co-writer of ‘God Catcher’, a new musical, premiered at the Edinburgh Fringe Festival. A Gentleman’s Guide to Love and Murder (Stage West Calgary), And The World Goes ‘Round (Stage West Calgary), and ‘Fiddler On The Moose’ (Victoria Playhouse). Tyler’s favourite plant is the Spider plant! (Chlorophytum comosum), because it purifies the air, and when it outgrows it’s pot, it sends out offshoots or spiderettes, looking for new soil to conquer! It’s not flashy but not afraid either, a great little reminder to branch out when you outgrow your current space.",
+    bio: <>Tyler McKinnon is an actor/composer from Leduc, Alberta, now based in London, UK. Tyler is one half the writing team for ‘How Not To Kill A Plant’ and he is thrilled to be performing in and debuting the show this year at the Edmonton International Fringe Festival. Previous credits include: Co-writer of ‘God Catcher’, a new musical, premiered at the Edinburgh Fringe Festival. A Gentleman’s Guide to Love and Murder (Stage West Calgary), And The World Goes ‘Round (Stage West Calgary), and ‘Fiddler On The Moose’ (Victoria Playhouse). Tyler’s favourite plant is the Spider plant! (Chlorophytum comosum), because it purifies the air, and when it outgrows it’s pot, it sends out offshoots or spiderettes, looking for new soil to conquer! It’s not flashy but not afraid either, a great little reminder to branch out when you outgrow your current space.</>,
      xUrl: 'https://twitter.com/tyler_mckinnon1',
     instaUrl: 'https://www.instagram.com/tmvocalists/',
     spotifyUrl: 'https://open.spotify.com/artist/0jODXf7ls0v8o4ue766ZQZ',
@@ -184,7 +184,7 @@ const people = [
     pronouns: "he/him",
     role: 'Howard',
     image: { src: imageMorganSmith },
-bio: 'Morgan has been involved in live theatre since 2009 when he landed a role in the chorus of <i>Joseph\'s Technicolor Dreamcoat</i>. Since then, he\'s been fortunate enough to play the <i>Man in Chair in The Drowsy Chaperone</i>, Alfie Byrne in <i>A Man of No Importance</i>, and Father in Sara\'s Rules\' rendition of <i>Eurydice</i>. Morgan is delighted to be involved in a new fringe work that exemplifies the idea that love, respect and humanity will eventually rule the day!',
+    bio: <>Morgan has been involved in live theatre since 2009 when he landed a role in the chorus of <i>Joseph&apos;s Technicolor Dreamcoat</i>. Since then, he&apos;s been fortunate enough to play the <i>Man in Chair in The Drowsy Chaperone</i>, Alfie Byrne in <i>A Man of No Importance</i>, and Father in Sara&apos;s Rules&apos; rendition of <i>Eurydice</i>. Morgan is delighted to be involved in a new fringe work that exemplifies the idea that love, respect and humanity will eventually rule the day!</>,
     instaUrl: 'https://www.instagram.com/petrichorproductionscanada/',
   },
     {
@@ -192,7 +192,7 @@ bio: 'Morgan has been involved in live theatre since 2009 when he landed a role 
       pronouns: "he/him",
       role: 'Kai',
       image: { src: imageMiloDubon },
-      bio: "Milo is entering his fourth year at MacEwan University, pursuing a BFA in Music Theatre Performance. He is excited to perform at the Edmonton Fringe Festival for the first time and shares his passion for making space for trans and non-binary performers with this incredible cast. Recent credits include Feste in Twelfth Night and Nate/ensemble in Legally Blonde (MacEwan University). He would like to thank his family and friends in Calgary for their endless support and a special shoutout to Chassidy Andrews for keeping him sane this summer. His favourite plant is the common lilac bush.",
+      bio: <>Milo is entering his fourth year at MacEwan University, pursuing a BFA in Music Theatre Performance. He is excited to perform at the Edmonton Fringe Festival for the first time and shares his passion for making space for trans and non-binary performers with this incredible cast. Recent credits include Feste in Twelfth Night and Nate/ensemble in Legally Blonde (MacEwan University). He would like to thank his family and friends in Calgary for their endless support and a special shoutout to Chassidy Andrews for keeping him sane this summer. His favourite plant is the common lilac bush.</>,
      instaUrl: 'https://www.instagram.com/milo.em.dubon/'
     },
     {
@@ -200,7 +200,7 @@ bio: 'Morgan has been involved in live theatre since 2009 when he landed a role 
       pronouns: "he/him",
       role: 'Tom Understudy',
       image: { src: imageKaelWynn },
-      bio: "Kael is an Edmonton based actor and writer as well as an avid boardgamer, Dungeons & Dragons DM, rock climber and is currently three books deep into the Witcher Saga! He is absolutely thrilled to be a part of How Not To Kill A Plant with Petrichor Productions, surrounded by an incredible group of artists from near and far. This is Kael’s first fringe since 2016, before University, COVID and a two year stint in Toronto where he spent way too much money on milk. Kael’s favourite plant is Fireweed! One of the first plants to grow after a fire, their bright purple flowers poking up above the ash. The first in new beginnings.",
+      bio: <>Kael is an Edmonton based actor and writer as well as an avid boardgamer, Dungeons & Dragons DM, rock climber and is currently three books deep into the Witcher Saga! He is absolutely thrilled to be a part of How Not To Kill A Plant with Petrichor Productions, surrounded by an incredible group of artists from near and far. This is Kael’s first fringe since 2016, before University, COVID and a two year stint in Toronto where he spent way too much money on milk. Kael’s favourite plant is Fireweed! One of the first plants to grow after a fire, their bright purple flowers poking up above the ash. The first in new beginnings.</>,
       instaUrl: 'https://www.instagram.com/baby.greens/'
     },
   {
@@ -208,10 +208,9 @@ bio: 'Morgan has been involved in live theatre since 2009 when he landed a role 
     pronouns: "she/her",
     role: 'Stage Manager',
     image: { src: imageMarcllaLafreniere },
-bio: "Marcella is a theatre production student going into the third year of her BFA in the fall at MacEwan University. She has a passion for costumes, theatre, and the fine arts in general. Some of her past shows include <i>The Tempest </i>(Freewill Shakespeare Festival), <i>Spring Awakening</i>, <i>Legally Blonde</i>, and <i>Sunday in the Park with George</i> (MacEwan). <i>How Not to Kill a Plant </i> will not only be Marcella\’s first ever Fringe show, but will also be her first show as a stage manager! She is beyond excited and grateful for the opportunity to learn and to be a part of it. Her favourite plant is the amelanchier alnifolia, more commonly known as a saskatoon berry or juneberry shrub.",
+  bio: <>Marcella is a theatre production student going into the third year of her BFA in the fall at MacEwan University. She has a passion for costumes, theatre, and the fine arts in general. Some of her past shows include <i>The Tempest </i>(Freewill Shakespeare Festival), <i>Spring Awakening</i>, <i>Legally Blonde</i>, and <i>Sunday in the Park with George</i> (MacEwan). <i>How Not to Kill a Plant </i> will not only be Marcella\’s first ever Fringe show, but will also be her first show as a stage manager! She is beyond excited and grateful for the opportunity to learn and to be a part of it. Her favourite plant is the amelanchier alnifolia, more commonly known as a saskatoon berry or juneberry shrub.</>,
    instaUrl: 'https://www.instagram.com/petrichorproductionscanada/'
   },
-  
 ]
 
 function Team() {
