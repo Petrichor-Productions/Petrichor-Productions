@@ -172,7 +172,7 @@ const people = [
   {
     name: 'Tyler McKinnon',
     pronouns: "he/him",
-    role: 'Tom, Composer, Producer',
+    role: 'Tom, Musical Director, Composer, Producer',
     image: { src: imageTylerMcKinnon},
     bio: <>Tyler McKinnon is an actor/composer from Leduc, Alberta, now based in London, UK, with his partner Ryan. Tyler is one half the writing team for <i>How Not To Kill A Plant</i> and he is thrilled to be performing in and debuting the show this year at the Edmonton International Fringe Festival. Previous credits include: Co-writer of <i>Little Weaver</i>  (previously <i>God Catcher</i>), a new musical, premiered at the Edinburgh Fringe Festival, <i>A Gentleman's Guide To Love and Murder</i> (Stage West Calgary), <i>And The World Goes 'Round</i> (Stage West Calgary), and <i>Fiddler on the Moose</i> (Victoria Playhouse). Tyler’s favourite plant is the Spider plant, (Chlorophytum comosum), because it purifies the air, and when it outgrows its pot, it sends out offshoots or spiderettes, looking for new soil to conquer! It’s not flashy but not afraid either, a great little reminder to branch out when you outgrow your current space.</>,
      xUrl: 'https://twitter.com/tyler_mckinnon1',
