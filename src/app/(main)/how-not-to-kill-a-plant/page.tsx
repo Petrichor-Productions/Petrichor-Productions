@@ -192,7 +192,7 @@ const people = [
       pronouns: "he/him",
       role: 'Kai',
       image: { src: imageMiloDubon },
-      bio: <>Milo is entering his fourth year at MacEwan University, pursuing a BFA in Music Theatre Performance. He is excited to perform at the Edmonton Fringe Festival for the first time and shares his passion for making space for trans and non-binary performers with this incredible cast. Recent credits include Feste in <i>Twelfth Night</i> and Nate/ensemble in <u>Legally Blonde</u>(MacEwan University). He would like to thank his family and friends in Calgary for their endless support and a special shoutout to Chassidy Andrews for keeping him sane this summer. His favourite plant is the common lilac bush.</>,
+      bio: <>Milo is entering his fourth year at MacEwan University, pursuing a BFA in Music Theatre Performance. He is excited to perform at the Edmonton Fringe Festival for the first time and shares his passion for making space for trans and non-binary performers with this incredible cast. Recent credits include Feste in <i>Twelfth Night</i> and Nate/ensemble in <u>Legally Blonde</u> - MacEwan University. He would like to thank his family and friends in Calgary for their endless support and a special shoutout to Chassidy Andrews for keeping him sane this summer. His favourite plant is the common lilac bush.</>,
      instaUrl: 'https://www.instagram.com/milo.em.dubon/'
     },
     {
