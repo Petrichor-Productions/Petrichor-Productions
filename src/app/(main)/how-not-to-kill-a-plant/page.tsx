@@ -200,7 +200,7 @@ const people = [
       pronouns: "he/him",
       role: 'Tom Understudy',
       image: { src: imageKaelWynn },
-      bio: <>Kael is an Edmonton based actor and writer as well as an avid boardgamer, Dungeons & Dragons DM, rock climber and is currently three books deep into the Witcher Saga! He is absolutely thrilled to be a part of <i>How Not To Kill A Plant</i> with Petrichor Productions, surrounded by an incredible group of artists from near and far. This is Kael’s first fringe since 2016, before University, COVID and a two year stint in Toronto where he spent way too much money on milk. Kael’s favourite plant is Fireweed! One of the first plants to grow after a fire, their bright purple flowers poking up above the ash. The first in new beginnings.</>,
+      bio: <>Kael is an Edmonton based actor and writer as well as an avid boardgamer, Dungeons & Dragons DM, rock climber and is currently three books deep into the Witcher Saga! He is absolutely thrilled to be a part of <i>How Not To Kill A Plant</i> with Petrichor Productions, surrounded by an incredible group of artists from near and far. This is Kael&apos;s first fringe since 2016, before University, COVID and a two year stint in Toronto where he spent way too much money on milk. Kael&apos;s favourite plant is Fireweed! One of the first plants to grow after a fire, their bright purple flowers poking up above the ash. The first in new beginnings.</>,
       instaUrl: 'https://www.instagram.com/baby.greens/'
     },
   {
@@ -208,7 +208,7 @@ const people = [
     pronouns: "she/her",
     role: 'Stage Manager',
     image: { src: imageMarcllaLafreniere },
-  bio: <>Marcella is a theatre production student going into the third year of her BFA in the fall at MacEwan University. She has a passion for costumes, theatre, and the fine arts in general. Some of her past shows include <i>The Tempest </i> - Freewill Shakespeare Festival, <i>Spring Awakening</i>, <i>Legally Blonde</i>, and <i>Sunday in the Park with George</i> - MacEwan. <i>How Not to Kill a Plant </i> will not only be Marcella\’s first ever Fringe show, but will also be her first show as a stage manager! She is beyond excited and grateful for the opportunity to learn and to be a part of it. Her favourite plant is the amelanchier alnifolia, more commonly known as a saskatoon berry or juneberry shrub.</>,
+  bio: <>Marcella is a theatre production student going into the third year of her BFA in the fall at MacEwan University. She has a passion for costumes, theatre, and the fine arts in general. Some of her past shows include <i>The Tempest </i> - Freewill Shakespeare Festival, <i>Spring Awakening</i>, <i>Legally Blonde</i>, and <i>Sunday in the Park with George</i> - MacEwan. <i>How Not to Kill a Plant </i> will not only be Marcella&apos;s first ever Fringe show, but will also be her first show as a stage manager! She is beyond excited and grateful for the opportunity to learn and to be a part of it. Her favourite plant is the amelanchier alnifolia, more commonly known as a saskatoon berry or juneberry shrub.</>,
    instaUrl: 'https://www.instagram.com/petrichorproductionscanada/'
   },
 ]
