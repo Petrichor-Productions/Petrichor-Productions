@@ -208,7 +208,7 @@ const people = [
     pronouns: "she/her",
     role: 'Stage Manager',
     image: { src: imageMarcllaLafreniere },
-  bio: <>Marcella is a theatre production student going into the third year of her BFA in the fall at MacEwan University. She has a passion for costumes, theatre, and the fine arts in general. Some of her past shows include <i>The Tempest </i>(Freewill Shakespeare Festival), <i>Spring Awakening</i>, <i>Legally Blonde</i>, and <i>Sunday in the Park with George</i> (MacEwan). <i>How Not to Kill a Plant </i> will not only be Marcella\’s first ever Fringe show, but will also be her first show as a stage manager! She is beyond excited and grateful for the opportunity to learn and to be a part of it. Her favourite plant is the amelanchier alnifolia, more commonly known as a saskatoon berry or juneberry shrub.</>,
+  bio: <>Marcella is a theatre production student going into the third year of her BFA in the fall at MacEwan University. She has a passion for costumes, theatre, and the fine arts in general. Some of her past shows include <i>The Tempest </i> - Freewill Shakespeare Festival, <i>Spring Awakening</i>, <i>Legally Blonde</i>, and <i>Sunday in the Park with George</i> - MacEwan. <i>How Not to Kill a Plant </i> will not only be Marcella\’s first ever Fringe show, but will also be her first show as a stage manager! She is beyond excited and grateful for the opportunity to learn and to be a part of it. Her favourite plant is the amelanchier alnifolia, more commonly known as a saskatoon berry or juneberry shrub.</>,
    instaUrl: 'https://www.instagram.com/petrichorproductionscanada/'
   },
 ]
