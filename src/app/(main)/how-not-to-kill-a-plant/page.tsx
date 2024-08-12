@@ -174,7 +174,7 @@ const people = [
     pronouns: "he/him",
     role: 'Tom, Musical Director, Composer, Producer',
     image: { src: imageTylerMcKinnon},
-    bio: <>Tyler McKinnon is an actor/composer from Leduc, Alberta, now based in London, UK, with his partner Ryan. Tyler is one half the writing team for <i>How Not To Kill A Plant</i> and he is thrilled to be performing in and debuting the show this year at the Edmonton International Fringe Festival. Previous credits include: Co-writer of <i>Little Weaver</i>  (previously <i>God Catcher</i>), a new musical, premiered at the Edinburgh Fringe Festival, <i>A Gentleman's Guide To Love and Murder</i> (Stage West Calgary), <i>And The World Goes 'Round</i> (Stage West Calgary), and <i>Fiddler on the Moose</i> (Victoria Playhouse). Tyler’s favourite plant is the Spider plant, (Chlorophytum comosum), because it purifies the air, and when it outgrows its pot, it sends out offshoots or spiderettes, looking for new soil to conquer! It’s not flashy but not afraid either, a great little reminder to branch out when you outgrow your current space.</>,
+    bio: <>Tyler McKinnon is an actor/composer from Leduc, Alberta, now based in London, UK, with his partner Ryan. Tyler is one half the writing team for <i>How Not To Kill A Plant</i> and he is thrilled to be performing in and debuting the show this year at the Edmonton International Fringe Festival. Previous credits include: Co-writer of <i>Little Weaver</i>  (previously <i>God Catcher</i>), a new musical, premiered at the Edinburgh Fringe Festival, <i>A Gentleman's Guide To Love and Murder</i> (Stage West Calgary), <i>And The World Goes 'Round</i> (Stage West Calgary), and <i>Fiddler on the Moose</i> (Victoria Playhouse). Tyler&apos;s favourite plant is the Spider plant, (Chlorophytum comosum), because it purifies the air, and when it outgrows its pot, it sends out offshoots or spiderettes, looking for new soil to conquer! It&apos;s not flashy but not afraid either, a great little reminder to branch out when you outgrow your current space.</>,
      xUrl: 'https://twitter.com/tyler_mckinnon1',
     instaUrl: 'https://www.instagram.com/tmvocalists/',
     spotifyUrl: 'https://open.spotify.com/artist/0jODXf7ls0v8o4ue766ZQZ',
@@ -184,7 +184,7 @@ const people = [
     pronouns: "he/him",
     role: 'Howard',
     image: { src: imageMorganSmith },
-    bio: <>Morgan has been involved in live theatre since 2009 when he landed a role in the chorus of <i>Joseph&apos;s Technicolor Dreamcoat</i>. Since then, he&apos;s been fortunate enough to play the <i>Man in Chair in The Drowsy Chaperone</i>, Alfie Byrne in <i>A Man of No Importance</i>, and Father in Sara&apos;s Rules&apos; rendition of <i>Eurydice</i>. Morgan is delighted to be involved in a new fringe work that exemplifies the idea that love, respect and humanity will eventually rule the day! Cacti hold a special place in Morgan's heart.</>,
+    bio: <>Morgan has been involved in live theatre since 2009 when he landed a role in the chorus of <i>Joseph&apos;s Technicolor Dreamcoat</i>. Since then, he&apos;s been fortunate enough to play the <i>Man in Chair in The Drowsy Chaperone</i>, Alfie Byrne in <i>A Man of No Importance</i>, and Father in Sara&apos;s Rules&apos; rendition of <i>Eurydice</i>. Morgan is delighted to be involved in a new fringe work that exemplifies the idea that love, respect and humanity will eventually rule the day! Cacti hold a special place in Morgan&apos;s heart.</>,
     instaUrl: 'https://www.instagram.com/petrichorproductionscanada/',
   },
     {
