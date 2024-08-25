@@ -163,7 +163,7 @@ const people = [
   {
     name: 'Cassie Muise',
     pronouns: "she/her",
-    role: 'Denise, Writer, Director, Producer',
+    role: 'Denise/Phyllis, Writer, Director, Producer',
     image: { src: imageCassieMuise },
     bio: <>Cassie Muise is originally from Nova Scotia and has an array of experience including film, theatre, teaching, choreographing, directing and writing. Cassie and Tyler have co-written <i>How Not To Kill A Plant</i> and <i>Little Weaver</i> (previously <i>God Catcher</i>), which made its world premiere at the Edinburgh Fringe Festival in 2023. Select credits include: Wednesday in <i>The Addams Family</i>, Tina Denmark in <i>Ruthless</i>, Nickie in <i>Sweet Chartiy</i>and the short film <i>T Minus</i>. She is currently based in Montréal with her partner Blair and their dogs, Fiyero and Kelso. Her favourite plant is the rubus idaeus, otherwise known as the red raspberry. While the deliciously tart fruit is well known, raspberry leaf makes a delicate tea to help with inflammation, digestion, and more. Cassie especially loves the rubus idaeus for the memories of picking them with her grandfather, Vincie.</>,
     linkedinUrl: 'https://ca.linkedin.com/in/cassie-muise-she-her-479462a',
