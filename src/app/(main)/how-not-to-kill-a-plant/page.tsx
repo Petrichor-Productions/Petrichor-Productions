@@ -433,7 +433,7 @@ export default function Contact() {
       </PageIntro>
 
       <Container className="relative">
-        <Cal showtimes={showtimes} /> 
+        <Cal showtimes={showtimes} tickets="https://tickets.fringetheatre.ca/event/601:5732/"/> 
       </Container>
 
       <Container className="mt-16">

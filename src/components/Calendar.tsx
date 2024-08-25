@@ -48,6 +48,8 @@ export function Cal(props: any) {
     return `geo:0,0?q=${u}`
   }
 
+  const tickets = props.tickets;
+
   const mindate = parse(props.showtimes.reduce(function(prev: any, curr: any) {
     return prev.date < curr.date ? prev : curr;
   }).date, "yyyy-MM-dd", new Date());
@@ -152,6 +154,18 @@ export function Cal(props: any) {
             </li>
           ))}
         </ol>
+        <div className="m-10 content-center place-items-center flex grid-cols-1 md:grid md:grid-cols-1 md:divide-x md:divide-gray-200">
+
+          <a href={tickets}>
+          <button
+            type="button"
+            className="rounded-full p-10 w-160 bg-indigo-600 px-8.5 py-4 text-l font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Buy Your Tickets!
+          </button>
+          </a>
+
+        </div>
       </section>
       </div>
     );
