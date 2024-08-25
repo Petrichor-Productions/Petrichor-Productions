@@ -31,6 +31,10 @@ const lutherCentre = "10012 81 Ave NW, Edmonton, AB";
 const lutherCentreGeo = "geo:53.51727,-113.489216";
 const lutherCentreMaps = "https://maps.app.goo.gl/nfDWYDvEUxGq14M38";
 
+const grindstone = "10019 81 Ave NW, Edmonton";
+const grindstoneGeo = "geo:53.516731,-113.489571";
+const GrindstoneMaps = "https://maps.app.goo.gl/H7GdzkxB54xHa486A";
+
 const showtimes = [
   {
     date: '2024-08-16',
@@ -112,8 +116,27 @@ const showtimes = [
     start: '21:45',
     duration: {hours: 1}
   },
-]
-
+ {
+    date: '2024-08-28',
+    name: 'Grindstone Theatre',
+    address: grindstone,
+    geo: grindstoneGeo,
+    maps: GrindstoneMaps,
+    imageUrl: pic.src,
+    start: '19:00',
+    duration: {hours: 1}
+  },
+  {
+    date: '2024-08-29',
+    name: 'Grindstone Theatre',
+    address: grindstone,
+    geo: grindstoneGeo,
+    maps: GrindstoneMaps,
+    imageUrl: pic.src,
+    start: '19:00',
+    duration: {hours: 1}
+  },
+];
 
 function TextInput({
   label,
