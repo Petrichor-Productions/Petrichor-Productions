@@ -22,7 +22,7 @@ const people = [
     name: 'Cassie Muise',
     role: 'Writer, Co-Producer',
     image: { src: imageCassieMuise },
-    bio: 'Cassie Muise is an alumni of both Randolph College for the Performing Arts (Toronto) and the Royal Conservatoire of Scotland (Glasgow). She has been an actor and singer for 20 years, and for the past 5 years has been writing, dramaturging, and producing work under Petrichor.',
+    bio: <>Cassie Muise is originally from Nova Scotia and has an array of experience including film, theatre, teaching, choreographing, directing and writing. Cassie and Tyler have co-written <i>How Not To Kill A Plant</i> and <i>Little Weaver</i> (previously <i>God Catcher</i>), which made its world premiere at the Edinburgh Fringe Festival in 2023. Select credits include: Wednesday in <i>The Addams Family</i>, Tina Denmark in <i>Ruthless</i>, Nickie in <i>Sweet Chartiy</i>and the short film <i>T Minus</i>. She is currently based in Montréal with her partner Blair, daughter Beira, and their dogs Fiyero and Kelso.</>,
     linkedinUrl: 'https://ca.linkedin.com/in/cassie-muise-she-her-479462a',
     instaUrl: 'https://www.instagram.com/cassiemuise/',
   },
@@ -30,7 +30,8 @@ const people = [
     name: 'Tyler McKinnon',
     role: 'Composer, Co-Producer',
     image: { src: imageTylerMcKinnon},
-    bio: 'Tyler McKinnon is an alumni of the Royal Conservatoire of Scotland (Glasgow), and has been an actor, singer and composer for 20 years.',
+    bio: <>Tyler McKinnon is an actor/composer from Leduc, Alberta, now based in London, UK, with his partner Ryan. Tyler is one half the writing team for <i>How Not To Kill A Plant</i> and he is thrilled to be performing in and debuting the show this year at the Edmonton International Fringe Festival. Previous credits include: Co-writer of <i>Little Weaver</i>  (previously <i>God Catcher</i>), a new musical, premiered at the Edinburgh Fringe Festival, <i>A Gentleman&apos;s Guide To Love and Murder</i> (Stage West Calgary), <i>And The World Goes &apos;Round</i> (Stage West Calgary), and <i>Fiddler on the Moose</i> (Victoria Playhouse). Most recently, Tyler, Chantelle Micalef-Grimaud, and Zoë Farrguia were awarded runner up for the prestigious Stiles and Drewe Best New Song Award for the song "Sunbird" from their piece <i>Immigration Crisis</i>.</>,
+
     xUrl: 'https://twitter.com/tyler_mckinnon1',
     instaUrl: 'https://www.instagram.com/tylermckinnon1/G',
     spotifyUrl: 'https://open.spotify.com/artist/0jODXf7ls0v8o4ue766ZQZ',

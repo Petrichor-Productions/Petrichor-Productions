@@ -455,9 +455,11 @@ export default function Contact() {
         <p>a story of love, grief, and growth</p>
       </PageIntro>
 
+      {/*/
       <Container className="relative">
         <Cal showtimes={showtimes} tickets="https://www.showpass.com/how-not-to/#location"/> 
       </Container>
+      */}
 
       <Container className="mt-16">
      {/*/

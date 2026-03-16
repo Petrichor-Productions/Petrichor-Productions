@@ -129,19 +129,6 @@ function ContactDetails() {
         </p>
         </div>
         <dl className="mt-6 grid grid-cols-1 gap-1 text-sm sm:grid-cols-3">
-            <div key="mailing">
-              <dd>
-                <Office name="Mailing Address">
-                  4650 Rue Hutchison
-                  <br />
-                  H2V 3Z9
-                  <br />
-                  Montréal, QC
-                  <br />
-                  Canada
-                </Office>
-              </dd>
-            </div>
           {[
             ['Press', 'press@petrichor-productions.ca'],
             ['Bookings', 'booking@petrichor-productions.ca'],
